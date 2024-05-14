@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, VStack, HStack, Box, Text, Stat, StatLabel, StatNumber, StatHelpText, StatArrow, IconButton } from "@chakra-ui/react";
-import { FaChartLine, FaDollarSign, FaUsers, FaShoppingCart } from "react-icons/fa";
+import { FaPhone, FaClock, FaSmile, FaUserCheck } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -11,10 +11,10 @@ const Index = () => {
         </Text>
 
         <HStack spacing={8} width="100%" justifyContent="space-around">
-          <StatBox icon={FaDollarSign} label="Revenue" value="$50,000" change="+5%" />
-          <StatBox icon={FaShoppingCart} label="Sales" value="1,200" change="+3%" />
-          <StatBox icon={FaUsers} label="Customers" value="300" change="+2%" />
-          <StatBox icon={FaChartLine} label="Growth" value="15%" change="+1%" />
+          <StatBox icon={FaPhone} label="Calls Answered" value="1,500" change="+10%" />
+          <StatBox icon={FaClock} label="Avg Handling Time" value="5 mins" change="-2%" />
+          <StatBox icon={FaSmile} label="Customer Satisfaction" value="85%" change="+5%" />
+          <StatBox icon={FaUserCheck} label="Agent Availability" value="90%" change="+3%" />
         </HStack>
 
         <Box width="100%" p={5} shadow="md" borderWidth="1px" borderRadius="md">
